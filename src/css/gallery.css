@@ -1,0 +1,71 @@
+:root {
+  --black: #000000;
+}
+
+body {
+  background-image: url("https://cdn.midjourney.com/a3027ff2-6f65-4f9e-8568-4420d39a6cd9/0_0.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+
+  align-content: center;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  text-decoration: none;
+  color: currentColor;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.gallery {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.22); /* Більша тінь при наведенні */
+  transition: all 0.3s ease;
+}
+
+.modal-image {
+  display: flex;
+}
+
+.large-image {
+  width: 1112px;
+  height: 640px;
+
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
