@@ -67,7 +67,7 @@ const images = [
   },
 ];
 
-// Створення розмітки галереї
+// create gallery
 const galleryMarkup = images
   .map(({ preview, original, description }) => {
     return `
@@ -84,11 +84,11 @@ const galleryMarkup = images
   })
   .join('');
 
-// Додавання до DOM
+// add to dom
 const galleryList = document.querySelector('.gallery');
 galleryList.innerHTML = galleryMarkup;
 
-// Ініціалізація SimpleLightbox після додавання елементів до DOM
+// init SimpleLightbox
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
